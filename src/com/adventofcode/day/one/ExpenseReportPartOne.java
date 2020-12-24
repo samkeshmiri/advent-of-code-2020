@@ -6,7 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ExpenseReport {
+/***
+ * 
+ * find the two entries that sum to 2020 and then multiply those two numbers together.
+ * 
+ * @author s.keshmiri
+ *
+ */
+public class ExpenseReportPartOne {
 	static int TARGET = 2020;
 
 	public static void main(String[] args) {
@@ -20,7 +27,7 @@ public class ExpenseReport {
 		ArrayList<Integer> expenses = new ArrayList<>();
 		
 		try (Scanner scanner = new Scanner(
-				new File("/Users/s.keshmiri/eclipse-workspace/AdventOfCode/src/com/adventofcode/dayone/input.txt"))) {
+				new File("/Users/s.keshmiri/eclipse-workspace/AdventOfCode/src/com/adventofcode/day/one/input.txt"))) {
 			while (scanner.hasNextLine()) {
 				Integer number = Integer.valueOf(scanner.nextLine());
 				expenses.add(number);
