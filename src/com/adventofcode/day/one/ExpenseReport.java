@@ -1,4 +1,4 @@
-package com.adventofcode.dayone;
+package com.adventofcode.day.one;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,7 +11,7 @@ public class ExpenseReport {
 
 	public static void main(String[] args) {
 	
-		ArrayList<Integer> expenses = loadList();
+		final ArrayList<Integer> expenses = loadList();
 		
 		System.out.println(answer(expenses));
 	}
